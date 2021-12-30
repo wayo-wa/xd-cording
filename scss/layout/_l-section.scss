@@ -1,0 +1,8 @@
+.l-section {
+    &__inner {
+        padding: 0 5%;
+        @include mq-up(xl) {
+            padding: 0 20px;
+        }
+    }
+}

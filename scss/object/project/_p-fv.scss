@@ -1,0 +1,71 @@
+/* ファーストビュー */
+
+.p-fv {
+    height: 690px;
+    padding-top: 130px;
+    background-image: url(../../../images/楕円形.png);
+    background-size: 708px;
+    background-position: top -124px right -85px;
+    @include mq-down() {
+        padding-top: 90px;
+        height: 100%;
+        background-size: 1040px;
+        background-position: top -69px center;
+    }
+    @media screen and (min-width:1650px) { 
+        background-size: 800px;
+    }
+    &__inner {
+        max-width: 1067px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        position: relative;
+        @include mq-down() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__content {
+        @include mq-up() {
+            padding-left: 30px;
+        }
+    }
+    //タイトル
+    &__ttl {
+        font-size: 3.2rem;
+        margin-top: 32px;
+        margin-bottom: 53px;
+        @include mq-down(sm) {
+            font-size: 2.8rem;
+        }
+        & br {
+            @include mq-down(xs) {
+                display: none;
+            }
+        }
+    }
+    //リード文
+    &__lead {
+        margin-bottom: 55px;
+    }
+    //img画像
+    &__img {
+        width: 518px;
+        position: absolute;
+        top: -30px;
+        @include mq-down() {
+            position: initial;
+            margin: 30px 0;
+            width: 85%;
+        }
+        @include mq-down(xl) {
+            right: 0;
+        } 
+        @include mq-up(xl) {//1200px以上
+            left: 505px;
+        }
+    }
+}

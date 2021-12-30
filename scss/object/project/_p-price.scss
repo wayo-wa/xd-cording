@@ -1,0 +1,53 @@
+.p-price {
+    padding: 57px 0 70px;
+    background: $bgColor_pale;
+    &__inner {
+        max-width: 966px;
+        padding: 0 20px 0;
+        margin: 0 auto;
+        @include mq-down(xl) {
+            padding: 0 5%;
+        }
+    }
+    &__wrap {
+        background: #FFFFFF;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        margin-top: 70px;
+        margin-bottom: 38px;
+        @include mq-down(lg) {
+            margin-top: 40px;
+        }
+    }
+    &__row {
+        display: flex;
+        border-bottom: 1px solid #E5E5E5;
+        @include mq-down(sm) {
+            flex-direction: column;
+            text-align: center;
+            border-bottom: 2px solid #E5E5E5;
+        }
+    }
+    &__ttl {
+        width: 290px;
+        border-right: 1px solid #E5E5E5;
+        padding: 40px 20px;
+        @include mq-down(sm) {
+            width: 100%;
+            border: 1px solid #E5E5E5;
+            padding: 30px 20px;
+        }
+    }
+    &__fee {
+        padding: 40px 30px ;
+        @include mq-down(sm) {
+            border-left: 1px solid #E5E5E5;
+            border-right: 1px solid #E5E5E5;
+            padding: 30px 20px;
+        }
+    }
+    &__caution {
+        display: block;
+        line-height: 1.6;
+        text-align: center;
+    }
+}

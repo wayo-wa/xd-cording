@@ -1,0 +1,56 @@
+.p-blog {
+    padding: 57px 0 90px;
+    background: $bgColor_pale;
+    &__inner {
+        max-width: 1267px;
+        margin: 0 auto;
+    }
+    &__list {
+        padding-top: 55px;
+        display: flex;
+        justify-content: space-between;
+        @include mq-down(lg) {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+    }
+    &__item {
+        position: relative;
+        width: calc(( 100% - 30px * 2) / 3);
+        background: #FFFFFF;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        margin: 0 auto;
+        @include mq-down(lg) {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        @include mq-up(xl) {
+            min-height: 387px;
+        }
+        & a {
+            display: block;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__content {
+            padding: 16px 16px 24px;
+            @include mq-up(xl) {
+                padding: 16px 18px 0;
+            }
+        }
+    }
+    &__desc {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        padding-bottom: 16px;
+    }
+    &__date {
+        position: absolute;
+        right: 36px;
+        bottom: 11px;
+        line-height: 1.6;
+    }
+}

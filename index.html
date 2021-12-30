@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <!-- Primary Meta Tags -->
+    <title>ユアコーディング</title>
+    <meta name="title" content="ユアコーディング">
+    <meta name="description" content="ユアコーディングはコーディングに特化したWEB制作を行っております。デザインからの制作依頼の場合は、別途ご連絡ください。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://awrecord.html.xdomain.jp/">
+    <meta property="og:title" content="ユアコーディング">
+    <meta property="og:description" content="ユアコーディングはコーディングに特化したWEB制作を行っております。デザインからの制作依頼の場合は、別途ご連絡ください。">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://awrecord.html.xdomain.jp/">
+    <meta property="twitter:title" content="ユアコーディング">
+    <meta property="twitter:description" content="ユアコーディングはコーディングに特化したWEB制作を行っております。デザインからの制作依頼の場合は、別途ご連絡ください。">
+    <meta property="twitter:image" content="">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <!-- AndroidのChrome用 -->
+    <link rel="icon" type="image/png" sizes="192×192" href="./images/android-chrome-192x192.png">
+    <!-- iOS用 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">   
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- swiper 7.3.3 -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <!-- aos.js -->
+    <link rel="stylesheet" href="./aos.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="l-header">
+        <div class="l-header__inner l-section__inner">
+            <!-- ロゴ -->
+            <div class="l-header__logo">
+                <img class="l-header__img" src="./images/logo.png" alt="ユアコーディングのロゴ">
+                <h1 class="l-header__ttl"><a href="#">ユアコーディング</a></h1>
+            </div>
+            <!-- ヘッダーナビ -->
+            <nav class="l-header__nav">
+                <ul class="l-header__menu">
+                    <li class="l-header__list"><a href="#features">特徴</a></li>
+                    <li class="l-header__list"><a href="#price">価格</a></li>
+                    <li class="l-header__list"><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <!-- ボタン -->
+            <a href="#contact" class="c-btn l-header__btn">お問い合わせ</a>
+            <!-- ハンバーガーアイコン -->
+            <div class="p-hamburger__trigger js-hamburger__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- ハンバーガーナビ -->
+            <nav class="p-hamburger__nav js-hamburger__nav">
+                <ul class="p-hamburger__menu">
+                    <li class="p-hamburger__list"><a class="js-hamburger__li" href="#features" >特 徴</a></li>
+                    <li class="p-hamburger__list"><a class="js-hamburger__li" href="#price">価 格</a></li>
+                    <li class="p-hamburger__list"><a class="js-hamburger__li" href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- ファーストビュー -->
+        <section class="p-fv">
+            <div class="p-fv__inner l-section__inner">
+                <div class="p-fv__wrap">
+                    <div class="p-fv__content" data-aos="fade-up">
+                        <h2 class="p-fv__ttl">
+                            コーディングの手間を<br>最小に、デザインに注力<br>する助けに
+                        </h2>
+                        <p class="p-fv__lead">
+                            ユアコーディングはコーディングに<br>
+                            特化したフリーランス<br>
+                            デザインに注力されたい方の<br>
+                            助けになります
+                        </p>
+                        <a class="c-btn p-fv__btn" href="#contact">お問い合わせ</a>
+                    </div>
+                    <img class="p-fv__img" data-aos="fade-up" src="./images/manager.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- 特徴 -->
+        <section id="features" class="p-features">
+            <div class="p-features__inner l-section__inner">
+                <h2 class="c-section__ttl" data-aos="fade-up">ユアコーディング3つの特徴</h2>
+                <span class="c-section__ttl--en" data-aos="fade-up">FEATURES</span>
+                <div class="p-features__wrap">
+                    <h3 class="p-features__ttl" data-aos="fade-up">高速コーディング</h3>
+                    <div class="p-features__item">
+                        <div class="p-features__item__img no1" data-aos="zoom-in">
+                            <img class="p-features__img" src="./images/cto.png" alt="">
+                        </div>
+                        <div class="p-features__item__content" data-aos="slide-up">
+                            <h4 class="p-features__desc">
+                                コーディングに特化したフリーランスのため、<br>
+                                スピード感を持った開発が可能。
+                            </h4>
+                            <p class="p-features__txt">
+                                開発は常にスピードとの勝負です。<br>
+                                ユアコーディングはコーディングに特化しているため、<br>
+                                素早く納品することで、クライアントがデザインに注力<br>
+                                する助けとなります。
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="p-features__ttl" data-aos="fade-up">高品質</h3>
+                    <div class="p-features__item">
+                        <div class="p-features__item__img no2" data-aos="zoom-in">
+                            <img class="p-features__img" src="./images/building_website.png" alt="">
+                        </div>
+                        <div class="p-features__item__content" data-aos="slide-up">
+                            <h4 class="p-features__desc">
+                                正しいマークアップで、<br>
+                                内部SEOに強いコーディングを<br>
+                                デフォルトで行います。
+                            </h4>
+                            <p class="p-features__txt">
+                                ユアコーディングでは、「予測しやすい」「再利用しやすい」<br>
+                                「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
+                                きちんとコーディングを行うため、納品後も安心です。
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="p-features__ttl" data-aos="fade-up">迅速なレスポンス</h3>
+                    <div class="p-features__item">
+                        <div class="p-features__item__img no3" data-aos="zoom-in">
+                            <img class="p-features__img" src="./images/new_message.png" alt="">
+                        </div>
+                        <div class="p-features__item__content" data-aos="slide-up">
+                            <h4 class="p-features__desc">
+                                原則いただいたメッセージは、<br>
+                                業務時間内であれば6時間以内に<br>
+                                お返しいたします。
+                            </h4>
+                            <p class="p-features__txt">
+                                連絡を返さないフリーランスが多い中、<br>
+                                ユアコーディングでは定期的な進捗報告など、<br>
+                                社会人としての基本を踏まえて仕事を行なって<br>
+                                おります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 価格 -->
+        <section id="price" class="p-price">
+            <div class="p-price__inner">
+                <h2 class="c-section__ttl" data-aos="fade-up">価格</h2>
+                <span class="c-section__ttl--en" data-aos="fade-up">PRICE</span>
+                <div class="p-price__wrap" data-aos="fade-up">
+                    <dl class="p-price__row">
+                        <dt class="p-price__ttl">HTMLコーディングトップページ</dt>
+                        <dd class="p-price__fee">30.000円〜</dd>
+                    </dl>
+                    <dl class="p-price__row">
+                        <dt class="p-price__ttl">HTMLコーディング下層1ページ</dt>
+                        <dd class="p-price__fee">10.000円〜</dd>
+                    </dl>
+                    <dl class="p-price__row">
+                        <dt class="p-price__ttl">HTML+WordPressトップページ</dt>
+                        <dd class="p-price__fee">55.000円〜</dd>
+                    </dl>
+                    <dl class="p-price__row">
+                        <dt class="p-price__ttl">HTML+WordPress下層1ページ</dt>
+                        <dd class="p-price__fee">15.000円〜</dd>
+                    </dl> 
+                </div>
+                <span class="p-price__caution" data-aos="fade-up">＊詳細な価格はページや仕様によって異なります</span>
+            </div>
+        </section>
+        <!-- よくある質問 -->
+        <section class="p-faq">
+            <div class="p-faq__inner">
+                <h2 class="c-section__ttl" data-aos="fade-up">よくある質問</h2>
+                <span class="c-section__ttl--en" data-aos="fade-up">FAQ</span>
+                <div class="p-faq__wrap" data-aos="fade-up">
+                    <dl id="faq" class="p-faq__row">
+                        <dt class="p-faq__que">デザインから一貫してお願いすることは可能でしょうか</dt>
+                        <dd class="p-faq__ans fst">
+                            ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
+                            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+                        </dd>
+                    </dl>
+                    <dl id="faq" class="p-faq__row">
+                        <dt class="p-faq__que">WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
+                        <dd class="p-faq__ans sec">
+                            可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+                        </dd>
+                    </dl>
+                    <dl id="faq" class="p-faq__row">
+                        <dt class="p-faq__que">コーディングのスピード感が知りたい</dt>
+                        <dd class="p-faq__ans thd">
+                            HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
+                            なります。
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!-- ブログ -->
+        <section class="p-blog">
+            <div class="p-blog__inner l-section__inner">
+                <h2 class="c-section__ttl" data-aos="fade-up">ブログ</h2>
+                <span class="c-section__ttl--en" data-aos="fade-up">BLOG</span>
+                <ul class="p-blog__list">
+                    <li class="p-blog__item" data-aos="flip-left">
+                        <a href="#">
+                            <img class="p-blog__img" src="./images/austin-distel-wawEfYdpkag-unsplash.jpg" alt="">
+                            <div class="p-blog__item__content">
+                                <h3 class="p-blog__desc">サイトをリニューアルオープンしました。</h3>
+                                <time class="p-blog__date" datetime="2020.01.23">2020.01.23</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="p-blog__item" data-aos="flip-left">
+                        <a href="#">
+                            <img class="p-blog__img" src="./images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="">
+                            <div class="p-blog__item__content">
+                                <h3 class="p-blog__desc">WebサイトでSEO内部施策に適したコー
+                                    ディングでどれぐらいサイトが早くなるの
+                                    か検証してみました</h3>
+                                <time class="p-blog__date" datetime="2020.01.23">2020.01.23</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="p-blog__item" data-aos="flip-left">
+                        <a href="#">
+                            <img class="p-blog__img" src="./images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="">
+                            <div class="p-blog__item__content">
+                                <h3 class="p-blog__desc">ユアコーディングではデザイナーの方を
+                                    広く募集しています。</h3>
+                                <time class="p-blog__date" datetime="2020.01.23">2020.01.23</time>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 制作実績 -->
+        <section id="works" class="p-works">
+            <div class="p-works__inner">
+                <h2 class="c-section__ttl" data-aos="fade-up">制作実績</h2>
+                <span class="c-section__ttl--en" data-aos="fade-up">WORKS</span>
+             
+                    <div class="swiper p-works__swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide p-works__item">
+                                <a href="#">
+                                    <div class="p-works__item__img">
+                                        <img class="p-works__img" src="./images/digital-marketing.jpg" alt="">
+                                    </div>
+                                    <div class="p-works__item__content">
+                                        <h3 class="p-works__desc">
+                                            株式会社サンプル様採用サイトのコーデ
+                                            ィングを行いました!
+                                        </h3>
+                                        <ul class="p-works__info">
+                                            <li class="p-works__info__list">採用技術:jQuery,Bootstrap4</li>
+                                            <li class="p-works__info__list">実装期間:2週間</li>
+                                            <li class="p-works__info__list">担当コーダー:石井</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide p-works__item">
+                                <a href="#">
+                                    <div class="p-works__item__img">
+                                        <img class="p-works__img" src="./images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="p-works__item__content">
+                                        <h3 class="p-works__desc">
+                                            コーディングカンファレンスのイベント
+                                            LPの制作を行いました!
+                                        </h3>
+                                        <ul class="p-works__info">
+                                            <li class="p-works__info__list">採用技術:jQuery,WordPress</li>
+                                            <li class="p-works__info__list">実装期間:4週間</li>
+                                            <li class="p-works__info__list">担当コーダー:石井</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide p-works__item">
+                                <a href="#">
+                                    <div class="p-works__item__img">
+                                        <img class="p-works__img" src="./images/digital-marketing.jpg" alt="">
+                                    </div>
+                                    <div class="p-works__item__content">
+                                        <h3 class="p-works__desc">
+                                            株式会社サンプル様採用サイトのコーデ
+                                            ィングを行いました!
+                                        </h3>
+                                        <ul class="p-works__info">
+                                            <li class="p-works__info__list">採用技術:jQuery,Bootstrap4</li>
+                                            <li class="p-works__info__list">実装期間:2週間</li>
+                                            <li class="p-works__info__list">担当コーダー:石井</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide p-works__item">
+                                <a href="#">
+                                    <div class="p-works__item__img">
+                                        <img class="p-works__img" src="./images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="p-works__item__content">
+                                        <h3 class="p-works__desc">
+                                            株式会社サンプル様通販サイトのコーデ
+                                            ィングを行いました!
+                                        </h3>
+                                        <ul class="p-works__info">
+                                            <li class="p-works__info__list">採用技術:jQuery,Bootstrap4</li>
+                                            <li class="p-works__info__list">実装期間:6週間</li>
+                                            <li class="p-works__info__list">担当コーダー:石井</li></ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide p-works__item">
+                                <a  href="#">
+                                    <div class="p-works__item__img">
+                                        <img class="p-works__img" src="./images/digital-marketing.jpg" alt="">
+                                    </div>
+                                    <div class="p-works__item__content">
+                                        <h3 class="p-works__desc">
+                                            株式会社サンプル様採用サイトのコーデ
+                                            ィングを行いました!
+                                        </h3>
+                                        <ul class="p-works__info">
+                                            <li class="p-works__info__list">採用技術:jQuery,Bootstrap4</li>
+                                            <li class="p-works__info__list">実装期間:2週間</li>
+                                            <li class="p-works__info__list">担当コーダー:石井</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+            </div>
+        </section>
+        <!-- お問い合わせ -->
+        <section id="contact" class="p-contact" name="contact_form">
+            <div class="p-contact__inner l-section__inner">
+                <h2 class="c-section__ttl p-contact__ttl" data-aos="fade-up">お問い合わせ</h2>
+                <span class="c-section__ttl--en p-contact__ttl--en" data-aos="fade-up">CONTACT</span>
+                <p class="p-contact__desc" data-aos="fade-up">
+                    コーディングの人出が足りないとき、<br>
+                    あなたの力になります
+                </p>
+                <form id="contact_form" class="p-form" action="/" method="post" data-aos="fade-up" onsubmit="return form_submit();">
+                    <p class="p-form__item">
+                        <label for="your_name">お名前
+                            <span class="p-form__require">必須</span>
+                        </label>
+                        <input class="p-form__input narrow" type="text" id="your_name" name="your_name" placeholder="お名前">
+                    </p>
+                    <p class="p-form__item">
+                        <label for="your_email">メールアドレス
+                            <span class="p-form__require">必須</span>
+                        </label>
+                        <input class="p-form__input narrow" type="email" id="your_email" name="your_email" placeholder="メールアドレス">
+                    </p>
+                    <p class="p-form__item">
+                        <label for="your_msg">お問い合わせ内容
+                            <span class="p-form__require">必須</span>
+                        </label>
+                        <textarea class="p-form__input wide" type="text" id="your_msg" name="your_msg" placeholder="内容"></textarea>
+                    </p>
+                    <label class="p-form__check js-check" for="privacy_policy">
+                        <input id="privacy_policy" class="input" type="checkbox" name="privacy_policy">
+                        <span class="checkbox">プライバシーポリシーに同意する</span>
+                    </label>
+                    <div class="p-form__btn">
+                        <input id="js-submit" class="c-btn" type="submit" value="送信する">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- フッター -->
+        <footer class="l-footer">
+            <h2 class="l-footer__ttl"><a href="index.html">ユアコーディング</a></h2>
+            <ul class="l-footer__list">
+                <li class="l-footer__item"><a href="#">プライバシーポリシー</a></li>
+                <li class="l-footer__item"><a href="#">個人商取引法に基づく表記</a></li>
+            </ul>
+            <small class="l-footer__copy">&copy;ユアコーディング,All Rights Reserved.</small>
+        </footer>
+    </main>
+    <!-- jQuery(CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery validation -->
+    <script type="text/javascript" src="./jquery.validate.min.js"></script>
+    <!-- swiper 7.3.3 -->
+    <script type="text/javascript" src="./swiper-bundle.min.js"></script>
+    <!-- aos.js -->
+    <script type="text/javascript" src="./aos.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* ボタン */
+
+.c-btn {
+    display: inline-block;
+    min-width: 155px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 9px 10px 10px;
+    background: $btnColor;
+    color: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    border-radius: 10px;
+    transition: 1s;
+    @include mq-down() {
+        width: 100%;
+    }
+    &:hover {
+        background: $btnColor_hover;
+        transition: 1s;
+    }
+}

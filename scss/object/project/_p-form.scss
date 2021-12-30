@@ -1,0 +1,116 @@
+.p-form {
+    padding: 31px 62px 35px;
+    background: #FFFFFF;
+    @include mq-down() {
+        padding: 32px 24px;
+    }
+    @include mq-down(sm) {
+        padding: 24px 16px;
+    }
+    &__item {
+        &:nth-of-type(1) {
+            & .p-form__input {
+                margin-bottom: 26px;
+            }
+        }
+        &:nth-of-type(2) {
+            & .p-form__input {
+                margin-bottom: 23px;
+            }
+        }
+        &:nth-of-type(3) {
+            & .p-form__input {
+                margin-bottom: 30px;
+            }
+        }
+        & label {
+            display: inline-block;
+            margin-bottom: 35px;
+            @include mq-down() {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__require {
+        display: inline-block;
+        text-align: center;
+        padding: 5px 16px 6px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        background: #0C449B;
+        color: #FFFFFF;
+        margin-left: 26px;
+        @include mq-down(sm) {
+            margin-left: 16px;
+        }
+    }
+    &__input {
+        background: $bgColor_pale;
+        display: block;
+        padding: 10px;
+        margin-bottom: 26px;
+        @include mq-down(xs) {
+            padding: 14px 10px;
+        }
+        &.narrow {
+            width: 499px;
+            @include mq-down() {
+                width: 100%;
+            }
+        }
+        &.wide {
+            width: 100%;
+            height: 179px;
+        }
+    }
+    & input::placeholder,
+      textarea::placeholder {
+          font-weight: normal;
+    }
+    &__check {
+        display: block;
+        text-align: center;
+        line-height: 1.7;
+        margin-top: -6px;
+        margin-bottom: 31px;
+        & .input {
+            //デフォルトのcheckbox。display:noneにするとよくないらしい。
+            //下記2行記述でデフォルトを消せるらしい。
+            position: absolute;
+            appearance: none;
+            //チェックされた時のチェックマーク
+            &:checked {
+                & + .checkbox::after {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    left: 5px;
+                    width: 10px;
+                    height: 15px;
+                    border-right: 3px solid $color_base;
+                    border-bottom: 3px solid $color_base;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        & .checkbox {
+            position: relative;
+            @include mq-down(xs) {
+                font-size: 1.4rem;
+            }
+            //自作のチェックボックス
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                border: 1px solid #707070;
+                vertical-align: middle;
+            }
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+}

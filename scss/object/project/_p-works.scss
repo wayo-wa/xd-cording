@@ -1,0 +1,31 @@
+.p-works {
+    padding: 57px 0 90px;
+    &__swiper {
+        margin-top: 70px;
+    }
+    &__item {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+        box-sizing: border-box;//swiperのswiper-slideにbox-sizing: border-box;を設定する。centeredSlidesを指定している場合に、スライドが中央からちょっとずれるので。
+        &__img {
+            @include mq-up(xl) {
+                min-height: 211px;
+            }
+        }
+        &__content {
+            padding: 20px 18px 42px;
+        }
+    }
+    &__desc {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+    &__info {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,8 @@
+/* メイン */
+
+main {//headerの高さ分
+    padding-top: 60px;
+    @include mq-up(xl) {
+        padding-top: 95px;
+    }
+}
