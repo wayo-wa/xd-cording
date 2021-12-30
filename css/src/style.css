@@ -453,7 +453,6 @@ p.is-error {
 .l-header__ttl {
   font-size: 2.4rem;
   padding-left: 16px;
-  letter-spacing: -0.1em;
 }
 
 @media screen and (max-width: 768px) {
@@ -539,7 +538,6 @@ main {
 .c-section__ttl {
   font-size: 3.2rem;
   text-align: center;
-  letter-spacing: -0.1em;
   margin-bottom: 14px;
 }
 
@@ -871,7 +869,6 @@ main {
   font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 46px;
-  letter-spacing: -0.1em;
 }
 
 @media screen and (max-width: 375px) {

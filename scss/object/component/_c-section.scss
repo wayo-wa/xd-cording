@@ -5,7 +5,6 @@
     &__ttl {
         font-size: 3.2rem;
         text-align: center;
-        letter-spacing: -0.1em;
         margin-bottom: 14px;
         @include mq-down(xs) {
             font-size: 2.4rem;
