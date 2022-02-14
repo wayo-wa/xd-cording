@@ -1,5 +1,5 @@
 ## XDデザインカンプからのコーディング  
-Adobe XDのデザインデータをもとに、架空の温泉旅館のHTML/CSSコーディングしました。
+Adobe XDのデザインデータをもとに、架空の会社のHTML/CSSコーディングしました。
   
 担当：コーディング  
 使用技術：HTML, Sass(CSS), JavaScript (jQuery/gulp)  
