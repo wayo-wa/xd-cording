@@ -12,3 +12,5 @@ PC版デザインカンプからコーディングしました。
 ・スムーススクロール  
 ・ハンバーガーメニュー  
 ・レスポンシブ対応  
+  
+  <img src="https://user-images.githubusercontent.com/73923419/153964369-b1262470-fd8f-4bdf-8918-51f151651e66.png" width="300px">
