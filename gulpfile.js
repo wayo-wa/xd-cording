@@ -4,7 +4,6 @@ var plumber = require('gulp-plumber');//gulpを止めない
 var mincss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var sassGlob = require('gulp-sass-glob');//importにおけるglobを有効にする
-// var minjs = require('gulp-uglify');//js圧縮
 var imagemin = require('gulp-imagemin');//画像圧縮
 var pngquant = require('imagemin-pngquant');//pngの圧縮率を上げる
 var changed = require('gulp-changed');//画像圧縮されたファイルを返す
@@ -29,15 +28,6 @@ gulp.task('mincss', function() {
     .pipe(gulp.dest('./css'));//出力先（cssフォルダに自動で作成される）
 });
 
-//jsを圧縮
-// gulp.task('minjs', function() {
-//     return gulp.src('./js/src/base.js')//元ファイル
-//     .pipe(plumber())//構文エラーあってもgulpを止めない.
-//     .pipe(minjs())//js圧縮
-//     .pipe(rename('app.min.js'))//ファイル名と拡張子の変更
-//     .pipe(gulp.dest('./js'));//出力先（jsフォルダに自動で作成される）
-// });
-
 //画像を圧縮
 var paths = {
     srcDir : './img',//元ディレクトリ
@@ -50,8 +40,6 @@ gulp.task('imagemin', function() {
         .pipe(plumber()) // 構文エラーあってもgulp止めない
         .pipe(changed(dstGlob))//srcGlobとdstGlobの差分を、changedで変更されていないファイルだけ返す
         .pipe(imagemin([//画像圧縮のオプション
-            // imagemin.gifsicle({interlaced: true}),//gif
-            // mozjpeg({progressive: true}),//jpeg
             pngquant({//png
                 quality: [.60, .70],
                 speed: 1
@@ -66,6 +54,5 @@ gulp.task('imagemin', function() {
 gulp.task('watch', function(){
     gulp.watch('./scss/**', gulp.series('sass'));//scss以下すべてのファイルをwatch
     gulp.watch('./css/src/*.css', gulp.series('mincss'));//css圧縮
-    // gulp.watch('./js/src/base.js', gulp.series('minjs'));//js圧縮
     gulp.watch(paths.srcDir + '/*', gulp.series('imagemin'));//画像圧縮
 });
