@@ -3,7 +3,7 @@ Adobe XDのデザインデータをもとに、架空の会社のHTML/CSSコー�
   
 担当：コーディング  
 使用技術：HTML, Sass(CSS), JavaScript (jQuery/gulp)  
-デザインツール：XD  
+デザインツール：Adobe XD  
   
 ・要素をふわっと表示（aos.js）  
 ・画像の自動再生（Swiper）  
