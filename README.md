@@ -2,7 +2,7 @@
 Adobe XDのデザインデータをもとに、架空の会社のHTML/CSSコーディングしました。
   
 担当：コーディング  
-使用技術：HTML, Sass(CSS), JavaScript (jQuery/gulp)  
+使用技術：HTML, CSS(SCSS), JavaScript (jQuery/gulp)  
 デザインツール：Adobe XD  
   
 ・要素をふわっと表示（aos.js）  
